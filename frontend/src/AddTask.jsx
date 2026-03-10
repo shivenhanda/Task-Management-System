@@ -25,8 +25,8 @@ export default function AddTask(){
             }
             <label htmlFor="date">Enter Task Date</label>
             <input type="date" value={new Date().toISOString().split("T")[0]} min={new Date().toISOString().split("T")[0]} {...register ('date',{required:true})} id="date"/>
-            <label htmlFor="tag">Enter Task Tag</label>
-            <input {...register ('tag')} id="tag"/>
+            <label htmlFor="label">Enter Task label</label>
+            <input {...register ('label')} id="label"/>
             <select name="priority" id="priority">
                     <option value="High Priority">High Priority</option>
                     <option value="Medium Priority">Medium Priority</option>
